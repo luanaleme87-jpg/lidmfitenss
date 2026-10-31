@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FITMOVE: roupas esportivas para acompanhar seu ritmo, com conforto, estilo e liberdade de movimento.">
+  <title>FITMOVE | Moda Fitness</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { neon: "#B6FF35", dark: "#111318", card: "#1C2028" },
+        fontFamily: { sans: ["Inter", "Arial", "sans-serif"] }
+      }}
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #111318; }
+    .gradient-text {
+      background: linear-gradient(90deg, #B6FF35, #48E6C1);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .hero-bg {
+      background: linear-gradient(90deg, rgba(17,19,24,.95), rgba(17,19,24,.45)),
+      url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1800&q=85") center/cover;
+    }
+    .product-card { transition: .3s ease; }
+    .product-card:hover { transform: translateY(-7px); border-color: #B6FF35; }
+    .btn-neon { background: #B6FF35; color: #111318; transition: .3s; }
+    .btn-neon:hover { background: #d0ff78; transform: scale(1.03); }
+  </style>
+</head>
+<body class="text-white font-sans">
+  <header class="bg-dark/95 border-b border-white/10 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-5 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-black italic tracking-tighter">FIT<span class="text-neon">MOVE</span></a>
+      <nav class="hidden md:flex gap-8 text-sm text-gray-300">
+        <a href="#colecao" class="hover:text-neon">Coleção</a>
+        <a href="#beneficios" class="hover:text-neon">Benefícios</a>
+        <a href="#avaliacoes" class="hover:text-neon">Avaliações</a>
+        <a href="#oferta" class="hover:text-neon">Ofertas</a>
+      </nav>
+      <a href="#colecao" class="btn-neon px-5 py-2 rounded-full font-bold text-sm">Comprar agora</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-bg min-h-[650px] flex items-center">
+      <div class="max-w-7xl mx-auto px-6 py-24 w-full">
+        <div class="max-w-2xl">
+          <span class="inline-block bg-neon/10 border border-neon/40 text-neon px-4 py-2 rounded-full text-xs font-bold tracking-widest mb-6">NOVA COLEÇÃO FITNESS</span>
+          <h1 class="text-5xl md:text-7xl font-black leading-tight mb-6">SEU CORPO. SEU RITMO. <span class="gradient-text">SUA MELHOR VERSÃO.</span></h1>
+          <p class="text-gray-300 text-lg md:text-xl mb-8 leading-relaxed">Vista sua determinação. Descubra roupas fitness que combinam conforto, liberdade de movimento e estilo para acompanhar cada conquista.</p>
+          <div class="flex flex-wrap gap-4 mb-10 text-sm text-gray-200">
+            <span>✓ Conforto o dia inteiro</span><span>✓ Modelagem moderna</span><span>✓ Liberdade de movimento</span>
+          </div>
+          <a href="#colecao" class="btn-neon inline-block px-10 py-4 rounded-full font-black text-lg shadow-lg shadow-lime-500/20">QUERO MINHA PEÇA →</a>
+          <p class="text-gray-400 text-xs mt-5">Consulte os preços e condições de cada produto.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="beneficios" class="py-20 bg-[#171A20]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-14">
+          <span class="text-neon text-sm font-bold tracking-widest">POR QUE ESCOLHER FITMOVE?</span>
+          <h2 class="text-3xl md:text-5xl font-black mt-3">PERFORMANCE EM <span class="gradient-text">CADA DETALHE</span></h2>
+          <p class="text-gray-400 mt-4">Tudo o que você precisa para treinar com confiança.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-7">
+          <article class="bg-card p-8 rounded-2xl border border-white/5">
+            <div class="text-4xl mb-5">💨</div><h3 class="text-xl font-bold mb-3">Conforto e respirabilidade</h3>
+            <p class="text-gray-400 leading-relaxed">Tecidos leves e agradáveis ao toque, pensados para proporcionar conforto durante seus treinos.</p>
+          </article>
+          <article class="bg-card p-8 rounded-2xl border border-white/5">
+            <div class="text-4xl mb-5">⚡</div><h3 class="text-xl font-bold mb-3">Liberdade de movimento</h3>
+            <p class="text-gray-400 leading-relaxed">Modelagens que acompanham seus movimentos na academia, nas caminhadas e nas atividades do dia a dia.</p>
+          </article>
+          <article class="bg-card p-8 rounded-2xl border border-white/5">
+            <div class="text-4xl mb-5">🔥</div><h3 class="text-xl font-bold mb-3">Design moderno</h3>
+            <p class="text-gray-400 leading-relaxed">Peças versáteis para você treinar com personalidade e manter o estilo dentro e fora da academia.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="colecao" class="py-20">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-14">
+          <span class="text-neon font-bold tracking-widest text-sm">ESCOLHA SEU ESTILO</span>
+          <h2 class="text-4xl md:text-5xl font-black mt-3">NOSSA COLEÇÃO</h2>
+          <p class="text-gray-400 mt-4">Encontre sua próxima peça favorita.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-7">
+          <article class="product-card bg-card rounded-2xl overflow-hidden border border-white/10">
+            <img src="https://images.unsplash.com/photo-1506629905607-d9f8e6e4e8c2?auto=format&fit=crop&w=600&q=80" alt="Legging fitness" class="w-full h-72 object-cover">
+            <div class="p-5"><span class="text-neon text-xs font-bold">DESTAQUE</span><h3 class="font-bold text-xl mt-2">Legging Fitness</h3><p class="text-gray-400 text-sm mt-2">Conforto e estilo para seus movimentos.</p><div class="mt-4 text-2xl font-black text-neon">Consulte o preço</div><button onclick="comprar('Legging Fitness')" class="btn-neon w-full mt-5 py-3 rounded-lg font-black">COMPRAR AGORA</button></div>
+          </article>
+          <article class="product-card bg-card rounded-2xl overflow-hidden border border-white/10">
+            <img src="https://images.unsplash.com/photo-1546483875-ad9014c88eba?auto=format&fit=crop&w=600&q=80" alt="Conjunto fitness" class="w-full h-72 object-cover">
+            <div class="p-5"><span class="text-neon text-xs font-bold">ESTILO E CONFORTO</span><h3 class="font-bold text-xl mt-2">Conjunto Fitness</h3><p class="text-gray-400 text-sm mt-2">O look completo para sua rotina.</p><div class="mt-4 text-2xl font-black text-neon">Consulte o preço</div><button onclick="comprar('Conjunto Fitness')" class="btn-neon w-full mt-5 py-3 rounded-lg font-black">COMPRAR AGORA</button></div>
+          </article>
+          <article class="product-card bg-card rounded-2xl overflow-hidden border border-white/10">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80" alt="Top esportivo" class="w-full h-72 object-cover">
+            <div class="p-5"><span class="text-neon text-xs font-bold">ESSENCIAL</span><h3 class="font-bold text-xl mt-2">Top Esportivo</h3><p class="text-gray-400 text-sm mt-2">Leveza e praticidade para treinar.</p><div class="mt-4 text-2xl font-black text-neon">Consulte o preço</div><button onclick="comprar('Top Esportivo')" class="btn-neon w-full mt-5 py-3 rounded-lg font-black">COMPRAR AGORA</button></div>
+          </article>
+          <article class="product-card bg-card rounded-2xl overflow-hidden border border-white/10">
+            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=600&q=80" alt="Camiseta esportiva" class="w-full h-72 object-cover">
+            <div class="p-5"><span class="text-neon text-xs font-bold">CASUAL FITNESS</span><h3 class="font-bold text-xl mt-2">Camiseta Fitness</h3><p class="text-gray-400 text-sm mt-2">Versatilidade para todos os momentos.</p><div class="mt-4 text-2xl font-black text-neon">Consulte o preço</div><button onclick="comprar('Camiseta Fitness')" class="btn-neon w-full mt-5 py-3 rounded-lg font-black">COMPRAR AGORA</button></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="avaliacoes" class="py-20 bg-[#171A20]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-14"><span class="text-neon font-bold tracking-widest text-sm">OPINIÕES DE CLIENTES</span><h2 class="text-4xl font-black mt-3">QUEM USA, RECOMENDA</h2><p class="text-gray-400 mt-3">Depoimentos ilustrativos: substitua por avaliações reais antes de publicar.</p></div>
+        <div class="grid md:grid-cols-3 gap-7">
+          <article class="bg-card p-8 rounded-2xl border border-white/5"><div class="text-yellow-400 mb-4">★★★★★</div><p class="text-gray-300 leading-relaxed">“Adorei o conforto! A roupa acompanha meus movimentos e fica linda para treinar.”</p><div class="mt-6 font-bold">Mariana S.</div><span class="text-gray-500 text-sm">Depoimento ilustrativo</span></article>
+          <article class="bg-card p-8 rounded-2xl border border-white/5"><div class="text-yellow-400 mb-4">★★★★★</div><p class="text-gray-300 leading-relaxed">“Gostei muito do modelo e da praticidade. Já quero conhecer outras peças da coleção!”</p><div class="mt-6 font-bold">Camila R.</div><span class="text-gray-500 text-sm">Depoimento ilustrativo</span></article>
+          <article class="bg-card p-8 rounded-2xl border border-white/5"><div class="text-yellow-400 mb-4">★★★★★</div><p class="text-gray-300 leading-relaxed">“Peças lindas e versáteis. Perfeitas para montar looks de academia.”</p><div class="mt-6 font-bold">Juliana M.</div><span class="text-gray-500 text-sm">Depoimento ilustrativo</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="oferta" class="py-20">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="bg-gradient-to-br from-[#252D22] to-[#182027] border border-neon/40 rounded-3xl p-8 md:p-14 text-center">
+          <span class="bg-neon text-dark font-black text-xs px-4 py-2 rounded-full">OFERTA ESPECIAL</span>
+          <h2 class="text-4xl md:text-6xl font-black mt-8">RENOVE SEU <span class="gradient-text">LOOK FITNESS!</span></h2>
+          <p class="text-gray-300 mt-5 text-lg">Confira as condições especiais da coleção FITMOVE.</p>
+          <div class="my-8"><div class="text-5xl md:text-6xl font-black text-neon mt-2">OFERTAS EXCLUSIVAS</div><p class="text-gray-400 text-sm mt-2">Consulte os preços e a disponibilidade dos produtos.</p></div>
+          <div class="mb-8"><p class="text-sm text-gray-400 mb-4 uppercase tracking-widest">Contagem regressiva demonstrativa</p>
+            <div class="flex justify-center gap-4">
+              <div class="bg-dark rounded-xl p-4 min-w-20"><div id="hours" class="text-3xl font-black text-neon">24</div><div class="text-xs text-gray-400">HORAS</div></div>
+              <div class="bg-dark rounded-xl p-4 min-w-20"><div id="minutes" class="text-3xl font-black text-neon">00</div><div class="text-xs text-gray-400">MINUTOS</div></div>
+              <div class="bg-dark rounded-xl p-4 min-w-20"><div id="seconds" class="text-3xl font-black text-neon">00</div><div class="text-xs text-gray-400">SEGUNDOS</div></div>
+            </div>
+          </div>
+          <a href="#colecao" class="btn-neon inline-block px-12 py-5 rounded-full font-black text-lg">APROVEITAR OFERTAS →</a>
+          <p class="text-gray-400 text-xs mt-6">A contagem é ilustrativa. Configure uma data real para uma promoção com prazo definido.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-14 border-y border-white/10 bg-[#171A20]">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div><div class="text-3xl mb-2">🚚</div><h3 class="font-bold">Entrega</h3><p class="text-gray-400 text-xs mt-1">Consulte prazos e valores</p></div>
+        <div><div class="text-3xl mb-2">🔒</div><h3 class="font-bold">Compra segura</h3><p class="text-gray-400 text-xs mt-1">Pagamento pela plataforma</p></div>
+        <div><div class="text-3xl mb-2">💳</div><h3 class="font-bold">Pagamento</h3><p class="text-gray-400 text-xs mt-1">Consulte as opções</p></div>
+        <div><div class="text-3xl mb-2">💬</div><h3 class="font-bold">Atendimento</h3><p class="text-gray-400 text-xs mt-1">Fale com nossa equipe</p></div>
+      </div>
+    </section>
+
+    <section class="py-20 text-center px-6">
+      <h2 class="text-4xl md:text-5xl font-black">SEU PRÓXIMO TREINO <span class="gradient-text">COMEÇA AQUI.</span></h2>
+      <p class="text-gray-400 mt-5 mb-8">Escolha suas peças favoritas e vista sua melhor versão.</p>
+      <a href="#colecao" class="btn-neon inline-block px-12 py-4 rounded-full font-black">VER A COLEÇÃO</a>
+    </section>
+  </main>
+
+  <footer class="bg-black py-10 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <div class="text-3xl font-black italic">FIT<span class="text-neon">MOVE</span></div>
+      <p class="text-gray-500 text-sm mt-4">Vista sua força. Movimente suas conquistas.</p>
+      <p class="text-gray-600 text-xs mt-8">© 2026 FITMOVE. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Troque esta URL pelo endereço real do seu checkout.
+    const CHECKOUT_URL = "";
+    function comprar(produto) {
+      if (CHECKOUT_URL) {
+        window.location.href = CHECKOUT_URL;
+      } else {
+        alert("Produto selecionado: " + produto + ". Configure a URL do checkout no código para ativar a compra.");
+      }
+    }
+
+    // Contagem demonstrativa de 24 horas por visita.
+    let tempoRestante = 24 * 60 * 60;
+    function atualizarContador() {
+      const h = Math.floor(tempoRestante / 3600);
+      const m = Math.floor((tempoRestante % 3600) / 60);
+      const s = tempoRestante % 60;
+      document.getElementById("hours").textContent = String(h).padStart(2, "0");
+      document.getElementById("minutes").textContent = String(m).padStart(2, "0");
+      document.getElementById("seconds").textContent = String(s).padStart(2, "0");
+      if (tempoRestante > 0) tempoRestante--;
+    }
+    atualizarContador();
+    setInterval(atualizarContador, 1000);
+  </script>
+</body>
+</html>
